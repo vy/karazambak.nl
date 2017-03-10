@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <title>Kara Zambak / Edebiyat Dergisi</title>
     <style type="text/css"><!--
+
+    @import url("https://fonts.googleapis.com/css?family=Catamaran:200");
+
     body {
         background: url("background.jpg") no-repeat center center fixed;
         -webkit-background-size: cover;
@@ -13,31 +16,75 @@
 
         height: 100vh;
 
-        display: -ms-flexbox;
-        display: -webkit-flex;
         display: flex;
-
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
+        flex-direction: column;
         justify-content: center;
 
-        -ms-flex-align: center;
-        -webkit-align-items: center;
         align-items: center;
     }
 
-    a {
+    #title {
         display: block;
+        margin: 6rem 0;
         max-width: 748px;
     }
 
-    a img {
+    #title img {
         width: 100%;
     }
+
+    #list {
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    #list li {
+        display: inline-block;
+        margin: 50px;
+    }
+
+    #list a {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    #list span.caption {
+        display: block;
+        font-family: "Catamaran", sans-serif;
+        font-size: 24pt;
+        color: #000;
+    }
+
+    #list img {
+        border: 1px solid #494949;
+    }
+
     --></style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <a href="https://www.facebook.com/kara.zambak.39"><img src="karazambak.png" alt="Kara Zambak / Edebiyat Dergisi"></a>
+
+    <div id="title">
+        <a href="https://www.facebook.com/kara.zambak.39">
+            <img src="karazambak.png" alt="Kara Zambak / Edebiyat Dergisi">
+        </a>
+    </div>
+
+    <ul id="list">
+        <li>
+            <a href="dergi/01-2016.pdf">
+                <img src="dergi/01-2016.jpg">
+                <span class="caption">Sayı 1, 2016 Bahar</span>
+            </a>
+        </li>
+        <li>
+            <a href="dergi/02-2016.pdf">
+                <img src="dergi/02-2016.jpg">
+                <span class="caption">Sayı 2, 2016 Sonbahar</span>
+            </a>
+        </li>
+    </ul>
+
 </body>
 </html>
